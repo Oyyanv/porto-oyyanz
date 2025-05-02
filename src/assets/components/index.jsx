@@ -15,10 +15,10 @@ const LandingPage = () => {
       </div>
 
       {/* gradient overlays */}
-      <div className="absolute top-0 left-0 w-full h-32 z-10 bg-gradient-to-b from-[#1A1A1D] to-transparent rounded-b-[100px] shadow-inner" />
-      <div className="absolute top-0 left-0 w-full h-32 z-10 bg-gradient-to-b from-[#1A1A1D] to-transparent rounded-b-[100px] shadow-inner" />
-      <div className="absolute bottom-0 left-0 w-full h-32 z-10 bg-gradient-to-t from-[#1A1A1D] to-transparent rounded-t-[100px] " />
-      <div className="absolute bottom-0 left-0 w-full h-32 z-10 bg-gradient-to-t from-[#1A1A1D] to-transparent rounded-t-[100px] " />
+      <div className="pointers-event-none absolute top-0 left-0 w-full h-32 z-10 bg-gradient-to-b from-[#1A1A1D] to-transparent rounded-b-[100px] shadow-inner" />
+      <div className="pointers-event-none absolute top-0 left-0 w-full h-32 z-10 bg-gradient-to-b from-[#1A1A1D] to-transparent rounded-b-[100px] shadow-inner" />
+      <div className="pointers-event-none absolute bottom-0 left-0 w-full h-32 z-10 bg-gradient-to-t from-[#1A1A1D] to-transparent rounded-t-[100px] " />
+      <div className="pointers-event-none absolute bottom-0 left-0 w-full h-32 z-10 bg-gradient-to-t from-[#1A1A1D] to-transparent rounded-t-[100px] " />
 
       {/* konten utama */}
       <div className="relative min-h-screen z-20 flex items-center justify-center text-white text-center pointer-events-none">
