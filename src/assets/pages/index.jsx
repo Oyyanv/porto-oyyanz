@@ -2,6 +2,7 @@ import React from 'react';
 import Squares from '../../../Reactbit/Squares/Squares';
 import BlurText from '../../../Reactbit/BlurText/BlurText';
 import Lanyard from '../components/Lanyard/Lanyard';
+import RotatingText from '../../../Reactbit/RotatingText/RotatingText';
 
 
 const handleAnimationComplete = () => {
@@ -38,19 +39,37 @@ const LandingPage = () => {
 
       {/* about section */}
       <section className="relative z-20 bg-[#1A1A1D] text-white min-h-screen flex flex-row">
-      <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-[#1A1A1D] to-transparent z-10 pointer-events-none" />
+        <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-[#1A1A1D] to-transparent z-10 pointer-events-none" />
         {/* Kolom Kiri */}
-        <div className="w-1/2 flex items-center justify-center border-r border-white">
-         <Lanyard 
-         position={[0, 0, 20]}
-         gravity={[0, -40, 0]}
-         fov={20}/>
+        <div className="hidden xl:w-1/2 xl:flex xl:items-center xl:justify-center xl:border-r xl:border-white">
+          <Lanyard
+            position={[0, 0, 20]}
+            gravity={[0, -40, 0]}
+            fov={17} />
         </div>
 
-       {/* Kolom Kanan */}
-        <div className="w-1/2 flex flex-col items-center justify-center text-center px-8">
+        {/* Kolom Kanan */}
+        <div className=" flex flex-col items-start justify-center text-left px-9 xl:ml-12 xl:w-1/2 xl:pr-24 xl:pl-12 xl:py-16">
           <h2 className="text-4xl font-bold mb-4">About Me</h2>
-        <p className="text-lg">This is a short description about Oyyan.</p>
+          <p className="text-xl">
+            Hi! I'm Muhammad Royyan, an 18-year-old aspiring Web Developer from Kalimantan, Indonesia. I love&nbsp;
+            <span className="inline-block">
+              <RotatingText
+                texts={['Coding', 'Anime', 'Vestia Zeta']}
+                mainClassName="sm:px-3 xl:w-40 w-36 md:px-4 bg-white text-black overflow-hidden  justify-center rounded-lg"
+                staggerFrom={"last"}
+                initial={{ y: "100%" }}
+                animate={{ y: 0 }}
+                exit={{ y: "-120%" }}
+                staggerDuration={0.025}
+                splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
+                transition={{ type: "spring", damping: 30, stiffness: 400 }}
+                rotationInterval={2000}
+              />
+            </span>
+            . and i'm passionate about learning new technologies and aim to become one of the best web developers in Indonesia and also the best zecretary 📜.
+          </p>
+
         </div>
       </section>
     </div>

@@ -6,6 +6,7 @@ export default {
         fontFamily: {
           Questrial: ["Questrial", "sans-serif"],
       },
+      
     },
   },
   plugins: [],
