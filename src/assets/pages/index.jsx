@@ -52,7 +52,7 @@ const LandingPage = () => {
         <div className=" flex flex-col items-start justify-center text-left px-9 xl:ml-12 xl:w-1/2 xl:pr-24 xl:pl-12 xl:py-16">
           <h2 className="text-4xl font-bold mb-4">About Me</h2>
           <p className="text-xl">
-            Hi! I'm Muhammad Royyan, an 18-year-old aspiring Web Developer from Kalimantan, Indonesia. I love&nbsp;
+            Hello! I'm Muhammad Royyan, an 18-year-old aspiring Web Developer from Kalimantan, Indonesia. I love&nbsp;
             <span className="inline-block">
               <RotatingText
                 texts={['Coding', 'Anime', 'Vestia Zeta']}
