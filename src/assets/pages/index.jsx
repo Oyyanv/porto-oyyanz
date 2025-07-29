@@ -14,7 +14,7 @@ const LandingPage = () => {
     <div className="relative w-screen overflow-x-hidden overflow-y-auto">
       {/* background (canvas) */}
       <div className="absolute inset-0 z-0">
-        <Squares />
+        <Squares/>
       </div>
 
       {/* gradient overlays */}
