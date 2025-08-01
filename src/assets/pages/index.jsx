@@ -3,7 +3,14 @@ import Squares from '../../../Reactbit/Squares/Squares';
 import BlurText from '../../../Reactbit/BlurText/BlurText';
 import Lanyard from '../components/Lanyard/Lanyard';
 import RotatingText from '../../../Reactbit/RotatingText/RotatingText';
+import GlassIcons from '../components/GlassIcons/GlassIcons';
+import { FiFileText, FiBook, FiHeart, FiCloud, FiEdit, FiBarChart2 } from 'react-icons/fi';
 
+const items = [
+  { icon: <FiCloud />, color: 'white', label: 'Weather' },
+  { icon: <FiEdit />, color: 'white', label: 'Notes' },
+  { icon: <FiBarChart2 />, color: 'white', label: 'Stats' },
+];
 
 const handleAnimationComplete = () => {
   console.log('Animation completed!');
@@ -14,7 +21,7 @@ const LandingPage = () => {
     <div className="relative w-screen overflow-x-hidden overflow-y-auto">
       {/* background (canvas) */}
       <div className="absolute inset-0 z-0">
-        <Squares/>
+        <Squares />
       </div>
 
       {/* gradient overlays */}
@@ -38,7 +45,7 @@ const LandingPage = () => {
       </div>
 
       {/* about section */}
-      <section className="relative z-20 bg-[#1A1A1D] text-white min-h-screen flex flex-row">
+      <section className="relative z-20 bg-[#1A1A1D] text-white min-h-screen flex flex-row overflow-y-hidden">
         <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-[#1A1A1D] to-transparent z-10 pointer-events-none" />
         {/* Kolom Kiri */}
         <div className="hidden xl:w-1/2 xl:flex xl:items-center xl:justify-center xl:border-r xl:border-white">
@@ -69,8 +76,11 @@ const LandingPage = () => {
             </span>
             . and i'm passionate about learning new technologies and aim to become one of the best web developers in Indonesia and also the best zecretary 📜.
           </p>
-
         </div>
+          {/* bottom barnya */}
+          <div className="absolute bottom-6 left-1/2 translate-x-[60%] z-50">
+            <GlassIcons items={items} />
+          </div>
       </section>
     </div>
   );
