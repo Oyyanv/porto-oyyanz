@@ -56,31 +56,7 @@ const LandingPage = () => {
         </div>
 
         {/* Kolom Kanan */}
-        <div className=" flex flex-col items-start justify-center text-left px-9 xl:ml-12 xl:w-1/2 xl:pr-24 xl:pl-12 xl:py-16">
-          <h2 className="text-4xl font-bold mb-4">About Me</h2>
-          <p className="text-xl">
-            Hello! I'm Muhammad Royyan, an 18-year-old aspiring Web Developer from Kalimantan, Indonesia. I love&nbsp;
-            <span className="inline-block">
-              <RotatingText
-                texts={['Coding', 'Anime', 'Vestia Zeta']}
-                mainClassName="sm:px-3 xl:w-40 w-36 md:px-4 bg-white text-black overflow-hidden  justify-center rounded-lg"
-                staggerFrom={"last"}
-                initial={{ y: "100%" }}
-                animate={{ y: 0 }}
-                exit={{ y: "-120%" }}
-                staggerDuration={0.025}
-                splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
-                transition={{ type: "spring", damping: 30, stiffness: 400 }}
-                rotationInterval={2000}
-              />
-            </span>
-            . and i'm passionate about learning new technologies and aim to become one of the best web developers in Indonesia and also the best zecretary 📜.
-          </p>
-        </div>
-          {/* bottom barnya */}
-          <div className="absolute xl:bottom-10 bottom-16 xl:left-1/2 xl:translate-x-[23%] translate-x-[15%] z-50">
-            <GlassIcons items={items} />
-          </div>
+        <div className=" flex flex-col items-start justify-center text-left px-9 xl:ml-12 xl:w-1/2 xl:pr-24 xl:pl-12 xl:py-16"> </div>
       </section>
     </div>
   );
