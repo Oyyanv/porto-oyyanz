@@ -78,7 +78,7 @@ const LandingPage = () => {
           </p>
         </div>
           {/* bottom barnya */}
-          <div className="absolute bottom-6 left-1/2 translate-x-[60%] z-50">
+          <div className="absolute xl:bottom-10 bottom-16 xl:left-1/2 xl:translate-x-[23%] translate-x-[15%] z-50">
             <GlassIcons items={items} />
           </div>
       </section>

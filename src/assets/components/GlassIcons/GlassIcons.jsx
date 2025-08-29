@@ -5,7 +5,7 @@ const gradientMapping = {
   indigo: "linear-gradient(hsl(253, 90%, 50%), hsl(238, 90%, 50%))",
   orange: "linear-gradient(hsl(43, 90%, 50%), hsl(28, 90%, 50%))",
   green: "linear-gradient(hsl(123, 90%, 40%), hsl(108, 90%, 40%))",
-  white: "linear-gradient(hsl(0, 0%, 100%), hsl(210, 50%, 95%))",
+  white: "linear-gradient(#959c9c, #232424)",
 };
 
 const GlassIcons = ({ items, className }) => {
@@ -18,7 +18,7 @@ const GlassIcons = ({ items, className }) => {
 
   return (
     <div
-      className={`grid gap-[3em] grid-cols-2 md:grid-cols-3 mx-auto py-[4em] overflow-visible ${className || ""
+      className={`grid gap-[3em] grid-cols-3 md:grid-cols-3 mx-auto py-[4em] overflow-visible ${className || ""
         }`}
     >
       {items.map((item, index) => (
@@ -48,7 +48,7 @@ const GlassIcons = ({ items, className }) => {
             </span>
           </span>
 
-          <span className="absolute top-full left-0 right-0 text-center whitespace-nowrap leading-[2] text-base opacity-0 transition-[opacity,transform] duration-300 ease-[cubic-bezier(0.83,0,0.17,1)] translate-y-0 group-hover:opacity-100 group-hover:[transform:translateY(5%)]">
+          <span className="absolute top-full left-0 right-0 text-center whitespace-nowrap leading-[2] text-base opacity-0 transition-[opacity,transform] duration-300 ease-[cubic-bezier(0.192,0,0.17,1)] translate-y-0 group-hover:opacity-100 group-hover:[transform:translateY(5%)]">
             {item.label}
           </span>
         </button>
