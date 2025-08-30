@@ -23,7 +23,7 @@ const LandingPage = () => {
       <div className="absolute inset-0 z-0 ">
         <Squares />
         {/* Radial untuk spotlight */}
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(26,26,29,0)_70%,#151515_90%)] backdrop-blur-[3px]" />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(26,26,29,0)_80%,#151515_95%)] backdrop-blur-[3px]" />
         {/* fade bawah */}
         <div className="pointer-events-none absolute bottom-0 left-0 w-full h-12 bg-gradient-to-t from-[#151515] to-transparent" />
       </div>
