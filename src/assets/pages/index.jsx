@@ -40,6 +40,13 @@ const LandingPage = () => {
             direction="top"
             className="xl:text-9xl text-6xl font-Questrial drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]"
           />
+          <BlurText
+            text="Junior Web Developer"
+            delay={400}
+            animateBy="words"
+            direction="bottom"
+            className="xl:text-7xl text-4xl font-Questrial drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]"
+          />
         </div>
       </div>
 
