@@ -20,15 +20,15 @@ const LandingPage = () => {
   return (
     <div className="relative w-screen overflow-x-hidden overflow-y-auto">
       {/* background (canvas) */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 ">
         <Squares />
+        {/* Radial untuk spotlight */}
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(26,26,29,0)_70%,#151515_90%)] backdrop-blur-[3px]" />
+        {/* fade bawah */}
+        <div className="pointer-events-none absolute bottom-0 left-0 w-full h-12 bg-gradient-to-t from-[#151515] to-transparent" />
       </div>
 
-      {/* gradient overlays */}
-      <div className="pointers-event-none absolute top-0 left-0 w-full h-32 z-10 bg-gradient-to-b from-[#1A1A1D] to-transparent rounded-b-[100px] shadow-inner" />
-      <div className="pointers-event-none absolute top-0 left-0 w-full h-32 z-10 bg-gradient-to-b from-[#1A1A1D] to-transparent rounded-b-[100px] shadow-inner" />
-      <div className="pointers-event-none absolute bottom-0 left-0 w-full h-32 z-10 bg-gradient-to-t from-[#1A1A1D] to-transparent rounded-t-[100px] " />
-      <div className="pointers-event-none absolute bottom-0 left-0 w-full h-32 z-10 bg-gradient-to-t from-[#1A1A1D] to-transparent rounded-t-[100px] " />
+
 
       {/* konten utama */}
       <div className="relative min-h-screen flex items-center justify-center text-white text-center pointer-events-none">
@@ -51,7 +51,7 @@ const LandingPage = () => {
       </div>
 
       {/* about section */}
-      <section className="relative z-20 bg-[#1A1A1D] text-white min-h-screen flex flex-row overflow-y-hidden">
+      <section className="relative z-20 bg-[#151515] text-white min-h-screen flex flex-row overflow-y-hidden">
         {/* <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-[#1A1A1D] to-transparent z-10 pointer-events-none" /> */}
         {/* Kolom Kiri */}
         {/* <div className="hidden xl:w-1/2 xl:flex xl:items-center xl:justify-center xl:border-r xl:border-white">
@@ -83,8 +83,8 @@ const LandingPage = () => {
             . and i'm passionate about learning new technologies and aim to become one of the best web developers in Indonesia and also the best zecretary 📜.
           </p>
         </div> */}
-          {/* bottom barnya */}
-          {/* <div className="absolute xl:bottom-10 bottom-24 xl:left-1/2 xl:translate-x-[23%] translate-x-[15%] z-50">
+        {/* bottom barnya */}
+        {/* <div className="absolute xl:bottom-10 bottom-24 xl:left-1/2 xl:translate-x-[23%] translate-x-[15%] z-50">
             <GlassIcons items={items} />
           </div> */}
       </section>
