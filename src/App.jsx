@@ -6,7 +6,7 @@ import LandingPage from './assets/pages';
 function App() {
 
   return (
-    <div className='flex flex-col items-center justify-center h-screen bg-[#1A1A1D] text-white'>
+    <div className='flex flex-col items-center justify-center h-screen bg-[#000000] text-white'>
      <LandingPage />
     </div>
   )
