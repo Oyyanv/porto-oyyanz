@@ -22,13 +22,11 @@ const LandingPage = () => {
       {/* background (canvas) */}
       <div className="absolute inset-0 z-0 ">
         <Squares />
-        {/* Radial untuk spotlight */}
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(26,26,29,0)_60%,#151515_95%)] backdrop-blur-[3px]" />
-        {/* fade bawah */}
-        <div className="pointer-events-none absolute bottom-0 left-0 w-full h-12 bg-gradient-to-t from-[#151515] to-transparent" />
+
       </div>
-
-
+      {/* fade efek */}
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(26,26,29,0)_60%,#151515_95%)]" />
+      <div className="pointer-events-none absolute bottom-0 left-0 w-full h-12 bg-gradient-to-t from-[#151515] to-transparent" />
 
       {/* konten utama */}
       <div className="relative min-h-screen flex items-center justify-center text-white text-center pointer-events-none">
