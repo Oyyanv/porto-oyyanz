@@ -6,12 +6,6 @@ import RotatingText from '../../../Reactbit/RotatingText/RotatingText';
 import GlassIcons from '../components/GlassIcons/GlassIcons';
 import { FiFileText, FiBook, FiHeart, FiCloud, FiEdit, FiBarChart2 } from 'react-icons/fi';
 
-const items = [
-  { icon: <FiCloud />, color: 'white', label: 'Weather' },
-  { icon: <FiEdit />, color: 'white', label: 'Notes' },
-  { icon: <FiBarChart2 />, color: 'white', label: 'Stats' },
-];
-
 const handleAnimationComplete = () => {
   console.log('Animation completed!');
 };
