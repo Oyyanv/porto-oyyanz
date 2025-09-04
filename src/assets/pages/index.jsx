@@ -38,7 +38,7 @@ const LandingPage = () => {
             direction="bottom"
             className="xl:text-7xl text-4xl font-Questrial drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]"
           />
-          <div className='mt-32 absolute left-[48%] -translate-x-1/2 flex justify-center'>
+          <div className='mt-32 absolute left-[50%] -translate-x-1/2 flex justify-center'>
             <a href="#about"
               className="group pointer-events-auto relative inline-flex h-12 w-12 items-center
               justify-center overflow-hidden rounded-full bg-[#ffffff] font-medium text-black
