@@ -44,6 +44,12 @@ const About = () => {
           fov={17}
         />
       </div>
+
+      <div className='absolute xl:bottom-10 bottom-5 w-full flex justify-between items-center xl:px-24 px-4 xl:gap-x-0 gap-x-16 text-white z-10'>
+        <p className='text-lg font-semibold font-mono'>Muhammad Royyan</p>
+        <p className='text-base font-mono text-justify'>Web developer pemula yang punya banyak ide tapi ga direalisasikan itulah my.</p>
+      </div>
+
     </section>
   );
 };
