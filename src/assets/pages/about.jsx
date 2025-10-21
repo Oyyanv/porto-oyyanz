@@ -7,7 +7,7 @@ const About = () => {
     <section id="about" className="relative w-screen h-screen flex items-center justify-center">
 
       {/* background text */}
-      <div className='absolute text-[14rem] mb-[25%] font-Lexend font-light text-white/5 select-none z-0'>
+      <div className='absolute text-[14rem] mb-[25%] font-Lexend font-light text-white/10 select-none z-0'>
         <div className='hidden xl:block'>
           <BlurText
             text="ABOUT ME"
