@@ -1,6 +1,7 @@
 import React from 'react';
 import Lanyard from '../components/Lanyard/Lanyard';
 import BlurText from '../../../Reactbit/BlurText/BlurText';
+import Experience from './assets/pages/experience';
 
 const About = () => {
   return (
@@ -37,7 +38,7 @@ const About = () => {
       </div>
 
       {/* foreground content */}
-      <div className="h-screen w-screen relative z-10 flex flex-col items-center">
+      <div className="h-screen w-screen relative z-50 flex flex-col items-center">
         <Lanyard
           position={[0, 0, 20]}
           gravity={[0, -40, 0]}
@@ -50,6 +51,10 @@ const About = () => {
         <p className='text-base font-mono text-justify'>Web developer pemula yang punya banyak ide tapi ga direalisasikan itulah my.</p>
       </div>
 
+      {/* Experience section */}
+      <div>
+        <Experience />
+      </div>
     </section>
   );
 };
