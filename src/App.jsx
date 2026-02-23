@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css'
 import LandingPage from './assets/pages';
 import About from './assets/pages/about';
+import Experience from './assets/pages/experience';
 
 
 function App() {
@@ -14,6 +15,9 @@ function App() {
       </div>
       <div className='flex items-center justify-center min-h-screen bg-[#151515] text-white'>
         <About />
+      </div>
+      <div className='flex items-center justify-center min-h-screen bg-[#151515] text-white'>
+        <Experience />
       </div>
     </div>
     </>
